@@ -62,8 +62,8 @@ int main()
         printf("\nNom => %s", noms[i]);
         printf("\nPrenom => %s", prenoms[i]);
         printf("\nAdresse => %s", adresses[i]);
-        printf("\nNote 1 : Programmation => %i", notes[i][0]);
-        printf("\nNote 2 : Systeme => %i", notes[i][1]);
+        printf("\nNote 1 : Programmation C => %i", notes[i][0]);
+        printf("\nNote 2 : Systeme d'exploitation => %i", notes[i][1]);
     }
 
     return 0;

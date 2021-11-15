@@ -80,8 +80,8 @@ int main()
         printf("\nNom => %s", etudiants[i].nom);
         printf("\nPrenom => %s", etudiants[i].prenom);
         printf("\nAdresse => %s", etudiants[i].adresse);
-        printf("\nNote 1 : Programmation => %i", etudiants[i].notes.prog);
-        printf("\nNote 2 : Systeme => %i", etudiants[i].notes.system);
+        printf("\nNote 1 : Programmation C => %i", etudiants[i].notes.prog);
+        printf("\nNote 2 : Systeme d'exploitation => %i", etudiants[i].notes.system);
     }
 
     printf("\n---------------------------------------\n\n");
