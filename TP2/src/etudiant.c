@@ -15,25 +15,33 @@ int main()
     // Generateur de nombres pseudo-aleatoires
     srand(time(NULL));
 
-    char nom[5][30] = {
+    // Initialisation des tableaux
+
+    // Tableaux de char en 2 dimensions pour stocker :
+
+    // Les noms
+    char noms[5][30] = {
         "MEYER",
         "LUNNEL",
         "KLEMARTIEN",
         "LAMARTINE",
         "ALEMBERT"};
-
-    char prenom[5][30] = {
+    // Les prenoms
+    char prenoms[5][30] = {
         "Rudolf",
         "Alice",
         "Kindy",
         "Jacques",
         "Albert"};
 
-    char adresse[5][50] = {
+    // Les adresses
+    char adresses[5][50] = {
         "18 rue salomom, 69001 Lyon",
         "18 rue Fourier, 69008 Lyon",
         "22 Avenue Galactic, 69003 Lyon", "24 rue Galileo, 69005",
         "18 rue Einstein, 69005 Lyon"};
+
+    // Les notes
     short notes[5][2] = {
         {rand() % 20, rand() % 20},
         {rand() % 20, rand() % 20},
@@ -46,22 +54,17 @@ int main()
     printf("\nGestion etudiants");
     printf("\n---------------------------------------");
 
-    // Avce scanf, on donne le choix à l'utilisateur, de donner la valeur de d
-
-    // int j = 0;
+    //Affichage des données etudiants via une boucle for
     for (int i = 0; i < 5; i++)
     {
         printf("\n---------------------------------------");
         printf("\n\nEtudiant %d", i + 1);
-        printf("\nNom => %s", nom[i]);
-        printf("\nPrenom => %s", prenom[i]);
-        printf("\nAdresse => %s", adresse[i]);
+        printf("\nNom => %s", noms[i]);
+        printf("\nPrenom => %s", prenoms[i]);
+        printf("\nAdresse => %s", adresses[i]);
         printf("\nNote 1 : Programmation => %i", notes[i][0]);
         printf("\nNote 2 : Systeme => %i", notes[i][1]);
     }
-
-    // printf("\nNote 1 => %d", notes[0][0]);
-    // printf("\nNote 2 => %d", notes[0][1]);
 
     return 0;
 }
