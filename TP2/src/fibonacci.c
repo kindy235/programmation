@@ -24,13 +24,13 @@ int main()
     {
         if (i < 2)
         {
-            printf("U[%d] => %lld\n", i, U0);
+            printf("U[%d] => %llu\n", i, U0);
         }
         else
         {
-            // Calucle du terme suivant U[n] = Un[n-1] + Un[n-2]
+            // Calucl du terme suivant U[n] = Un[n-1] + Un[n-2]
             Un = U1 + U0;
-            printf("U[%d] => %lld\n", i, Un);
+            printf("U[%d] => %llu\n", i, Un);
 
             // Sauvegrade du precedent terme Un[n-2] pour le prochain calcul.
             U0 = U1;

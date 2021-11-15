@@ -7,24 +7,61 @@ Objectif : Gerer des données de 5 etudiants à l'aide des tableaux.
 */
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 int main()
 {
-    char nom[5][10];
-    char prenom[5][10];
-    char adresse[5][10];
-    short notes[5][2];
+    // Generateur de nombres pseudo-aleatoires
+    srand(time(NULL));
 
-    // On initialise un entier non signé et un tableau de 32 cases
-    // representant les 32 bits d'un entier
-    unsigned int d = 0;
-    int tableau[32];
-    printf("\n--------------------------------------");
+    char nom[5][30] = {
+        "MEYER",
+        "LUNNEL",
+        "KLEMARTIEN",
+        "LAMARTINE",
+        "ALEMBERT"};
+
+    char prenom[5][30] = {
+        "Rudolf",
+        "Alice",
+        "Kindy",
+        "Jacques",
+        "Albert"};
+
+    char adresse[5][50] = {
+        "18 rue salomom, 69001 Lyon",
+        "18 rue Fourier, 69008 Lyon",
+        "22 Avenue Galactic, 69003 Lyon", "24 rue Galileo, 69005",
+        "18 rue Einstein, 69005 Lyon"};
+    short notes[5][2] = {
+        {rand() % 20, rand() % 20},
+        {rand() % 20, rand() % 20},
+        {rand() % 20, rand() % 20},
+        {rand() % 20, rand() % 20},
+        {rand() % 20, rand() % 20},
+    };
+
+    printf("\n---------------------------------------");
     printf("\nGestion etudiants");
-    printf("\n--------------------------------------");
+    printf("\n---------------------------------------");
 
     // Avce scanf, on donne le choix à l'utilisateur, de donner la valeur de d
-    printf("\nEntier d => ");
+
+    // int j = 0;
+    for (int i = 0; i < 5; i++)
+    {
+        printf("\n---------------------------------------");
+        printf("\n\nEtudiant %d", i + 1);
+        printf("\nNom => %s", nom[i]);
+        printf("\nPrenom => %s", prenom[i]);
+        printf("\nAdresse => %s", adresse[i]);
+        printf("\nNote 1 : Programmation => %i", notes[i][0]);
+        printf("\nNote 2 : Systeme => %i", notes[i][1]);
+    }
+
+    // printf("\nNote 1 => %d", notes[0][0]);
+    // printf("\nNote 2 => %d", notes[0][1]);
 
     return 0;
 }

@@ -78,8 +78,8 @@ int main()
     printf("\nConcatenation de Chaine1 et Chaine2\n");
 
     concat(chaine, chaine1, chaine2);
-    printf("\nChaineS => %s", chaine);
-    printf("\nTaille Chaine S => %d\n", taille(chaine));
+    printf("\nChaine Concatennee => %s", chaine);
+    printf("\nTaille Chaine Concatennee => %d\n", taille(chaine));
 
     printf("\n--------------------------------------");
     printf("\nCopie de Chaine1 dans Chaine2\n");

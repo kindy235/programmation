@@ -27,6 +27,8 @@ typedef struct etudiant
 
 int main()
 {
+    // Generateur de nombres pseudo-aleatoires
+    srand(time(NULL));
     printf("\n---------------------------------------");
     printf("\nGestion etudiants");
     printf("\n---------------------------------------");
@@ -35,10 +37,6 @@ int main()
     etudiant etudiants[5];
 
     // Initialisation
-
-    // Generateur de nombres pseudo-aleatoires
-
-    srand(time(NULL));
 
     // Etudiant 1
     strcpy(etudiants[0].nom, "MEYER");

@@ -43,6 +43,7 @@ int main()
         {
             resultat = resultat / a;
         }
+        // On affiche 15 decimal apres la virgule.
         printf("\nResultat : %d^%d = %.15lf\n\n", a, b, resultat);
     }
 

@@ -27,7 +27,7 @@ void colors_fill(couleur colors[], int array_size)
 {
     for (int i = 0; i < array_size; i++)
     {
-        // La fonction rand me permet de generer des nombre aléatoires comprise entre 0 et 255
+        // La fonction rand me permet de generer des nombre aléatoires compris entre 0 et 255
         colors[i].rouge = rand() % 0xff;
         colors[i].vert = rand() % 0xff;
         colors[i].bleu = rand() % 0xff;
