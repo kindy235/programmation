@@ -34,15 +34,9 @@ int main()
             if (i != j && couleurs[i].rouge == couleurs[j].rouge && couleurs[i].vert == couleurs[j].vert && couleurs[i].bleu == couleurs[j].bleu && couleurs[i].alpha == couleurs[j].alpha)
             {
                 couleurs[i].compteur += couleurs[j].compteur;
-                // if (j != 99)
-                // {
                 printf("\n\nCouleur %d => 0x%x 0x%x 0x%x 0x%x %d", i + 1, couleurs[i].rouge, couleurs[i].vert, couleurs[i].bleu, couleurs[i].alpha, couleurs[i].compteur);
-                // }
             }
         }
-        // if (couleurs[i].compteur != 1)
-        // {
-        // }
     }
 
     // printf("\nCompteur de couleurs");

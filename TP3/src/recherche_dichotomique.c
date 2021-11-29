@@ -1,8 +1,8 @@
 /*
-Exercice 3.4 [★★]
+Exercice 3.7 [★★★]
 
-Fichier : chaercher.c
-Auteurs : Aboubacar BAH, ....
+Fichier : recherche_dichotomique.c
+Auteurs : Aboubacar BAH, Guth MOELLE
 Objectif : Rechercher par dichotomie un entier dans un tableau de 100 entier
 */
 

@@ -2,7 +2,7 @@
 Exercice 3.4 [★★]
 
 Fichier : chaercher.c
-Auteurs : Aboubacar BAH, ....
+Auteurs : Aboubacar BAH, Guth MOELLE
 Objectif : Rechercher un entier dans un tableau de 100 entier
 */
 
