@@ -14,7 +14,7 @@ int main()
     char nom_fichier[30];
     printf("Nom fichier : ");
     scanf("%s", nom_fichier);
-    char *message = "Je t'emmerdes";
+    char *message = "J'ecris n'importe quoi pour n'importe qui et n'importe quand.";
 
     // lire_fichier(nom_fichier);
 
