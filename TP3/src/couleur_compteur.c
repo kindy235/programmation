@@ -9,7 +9,6 @@ Objectif : Compteur les differentes couleurs distinctes et les afficher
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <string.h>
 // "couleurs.h" est un fichier header contenant la strcuture couleurs et les differentes fonctions associées.
 // Pour compiler : gcc -o couleur_compteur couleur_compteur.c couleurs.c
 #include "couleurs.h"
@@ -54,12 +53,12 @@ int main()
     // On affiche les 100 couleurs à l'aide de la fonction "colors_print"
     colors_print(couleurs, 100);
 
-    // Comptage et affichage des couleurs semblables
     // Compoteur[],tableau pour compteur le nombres d'apparition d'une couluers
     int compteur[100] = {0};
-    // Verifie si une couleur a été dèjà compté ou pas
+    // Tableau pour Verifier si une couleur a été dèjà compté ou pas
     int doublon[100] = {0};
 
+    // Boucles pour leomptage et affichage des couleurs semblables
     int i, j;
     for (i = 0; i < 100; i++)
     {
