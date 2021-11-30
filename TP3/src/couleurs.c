@@ -2,8 +2,8 @@
 Exercice 2.7 [★★]
 
 Fichier : couleurs.c
-Auteur : Aboubacar BAH
-Objectif : Initialiser 10 couleurs à l'aide des structures et des tableau.
+Auteurs : Aboubacar BAH, Guth MOELLE
+Objectif : Initialiser couleurs à l'aide des structures et des tableau.
 */
 
 #include <stdio.h>
