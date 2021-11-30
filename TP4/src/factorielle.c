@@ -3,7 +3,7 @@ Exercice 4.5 [★★]
 
 Fichier : facroriel.c
 Auteurs : Aboubacar BAH, Guth MOELLE
-Objectif : Effectue des calcul via les fichiers "operator.c" et "operator.h"
+Objectif : Effectue des calcul factorielles sur des entiers
 */
 
 #include <stdio.h>
