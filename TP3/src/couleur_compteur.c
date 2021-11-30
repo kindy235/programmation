@@ -76,9 +76,11 @@ int main()
 
     colors_print(couleurs, 100);
 
-    int i, j, match = 0;
+    int compteur[100] = {0};
+    int i, j, match;
     for (i = 0; i < 100; i++)
     {
+        match = 1;
         for (j = 0; j < 100; j++)
         {
             if (i != j && couleurs[i].rouge == couleurs[j].rouge && couleurs[i].vert == couleurs[j].vert && couleurs[i].bleu == couleurs[j].bleu && couleurs[i].alpha == couleurs[j].alpha)
@@ -86,36 +88,36 @@ int main()
                 match += 1;
             }
         }
-        couleurs[i].compteur += match;
-        printf("\n\nCouleur %d => 0x%x 0x%x 0x%x 0x%x %d", i + 1, couleurs[i].rouge, couleurs[i].vert, couleurs[i].bleu, couleurs[i].alpha, couleurs[i].compteur);
+        compteur[i] = match;
+        printf("\n\nCouleur %d => 0x%x 0x%x 0x%x 0x%x %d", i + 1, couleurs[i].rouge, couleurs[i].vert, couleurs[i].bleu, couleurs[i].alpha, compteur[i]);
         match = 0;
     }
 
-    int tab[100] = {0};
+    // int tab[100] = {0};
 
-    for (int i = 0; i < 100; i++)
-    {
+    // for (int i = 0; i < 100; i++)
+    // {
 
-        for (int j = 0; j < 100; j++)
-        {
-            if (tab[j] == 0)
-            {
-                tab[j] = couleurs[i].compteur;
-            }
-            if (tab[j] == couleurs[i].compteur)
-            {
-                break;
-            }
-        }
-    }
+    //     for (int j = 0; j < 100; j++)
+    //     {
+    //         if (tab[j] == 0)
+    //         {
+    //             tab[j] = couleurs[i].compteur;
+    //         }
+    //         if (tab[j] == couleurs[i].compteur)
+    //         {
+    //             break;
+    //         }
+    //     }
+    // }
 
-    for (int i = 0; i < 100; i++)
-    {
-        if (tab[i] != 0)
-        {
-            printf("\ni= %d\n", tab[i]);
-        }
-    }
+    // for (int i = 0; i < 100; i++)
+    // {
+    //     if (tab[i] != 0)
+    //     {
+    //         printf("\ni= %d\n", tab[i]);
+    //     }
+    // }
 
     // colors_compteur(couleurs, 100);
 

@@ -14,7 +14,6 @@ typedef struct couleur
     unsigned char vert;
     unsigned char bleu;
     unsigned char alpha;
-    unsigned int compteur;
 } couleur;
 
 // Fonction de remplissage du tableau des couleurs
