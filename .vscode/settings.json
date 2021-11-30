@@ -1,6 +1,7 @@
 {
     "cmake.configureOnOpen": false,
     "files.associations": {
-        "couleurs.h": "c"
+        "couleurs.h": "c",
+        "fichier.h": "c"
     }
 }
