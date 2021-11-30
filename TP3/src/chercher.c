@@ -9,9 +9,8 @@ Objectif : Rechercher un entier dans un tableau de 100 entier
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <string.h>
 
-// Affiche les elements d'un tableau d'entier
+// Fonction pour affiche les elements d'un tableau d'entiers
 void printint_array(int array[], int array_size)
 {
     for (int k = 0; k < array_size; k++)
@@ -29,7 +28,7 @@ int main()
     printf("\nRecherhe d'un entier");
     printf("\n---------------------------------------");
 
-    // Declaration de deux tableaux de types int et l'entier à rechercher
+    // Declaration du tableau de type int et l'entier à rechercher
 
     int tableau[100];
     int entier = 0, find = 0;

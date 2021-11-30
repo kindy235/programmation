@@ -9,9 +9,8 @@ Objectif : Rechercher par dichotomie un entier dans un tableau de 100 entier
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <string.h>
 
-// Affiche les elements d'un tableau d'entier
+// Affiche les elements d'un tableau d'entiers
 void printint_array(int array[], int array_size)
 {
     for (int k = 0; k < array_size; k++)
@@ -20,6 +19,7 @@ void printint_array(int array[], int array_size)
     }
 }
 
+// Fonction pour trier par ordre alphanumerique un tableau d'entiers
 void tri(int array[], int array_size)
 {
     int i, j, temp;
@@ -46,8 +46,9 @@ int main()
     printf("\nRecherhe dichotomique d'un entier dans un tableau trie");
     printf("\n---------------------------------------");
 
-    // Declaration de deux tableaux de types int et l'entier à rechercher
-
+    // Declaration du tableau type int et l'entier à rechercher
+    // Les variables debut et fin contient les debuts et fin des indices du tableaux, elles sont utililes
+    // pour la recherche dichotomique. La variale mil contient contier l'indice entre le debut et la fin
     int tableau[100];
     int entier = 0, find = 0, debut = 0, fin = 100, mil = 0;
 
@@ -68,7 +69,7 @@ int main()
     printf("\n\nSaisir l'entier a rechercher => ");
     scanf("%d", &entier);
 
-    // Recherche de l'entier
+    // Recherche de l'entier par dichotomie
     while (find == 0 && debut <= fin)
     {
         mil = (debut + fin) / 2;
@@ -89,7 +90,7 @@ int main()
         }
     }
 
-    // printf("%d entier trouve\n", find);
+    // Verifie si l'entier est present ou pas.
     if (find == 0)
     {
         printf("\nAucun entier trouve");

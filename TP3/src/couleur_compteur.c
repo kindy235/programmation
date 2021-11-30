@@ -58,7 +58,7 @@ int main()
     // Tableau pour Verifier si une couleur a été dèjà compté ou pas
     int doublon[100] = {0};
 
-    // Boucles pour leomptage et affichage des couleurs semblables
+    // Boucles pour le comptage et l'affichage des couleurs semblables
     int i, j;
     for (i = 0; i < 100; i++)
     {
