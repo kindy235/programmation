@@ -16,10 +16,13 @@ void lire_fichier(char *nom_de_fichier)
     FILE *mon_fichier = fopen(nom_de_fichier, "r");
     if (!mon_fichier)
     {
-        printf("oops, %s n'existe pas\n", nom_de_fichier);
+        printf("oops, le fichier '%s' n'existe pas\n", nom_de_fichier);
         exit(-1);
     }
-    printf("Le contenu du fichier %s est:\n", nom_de_fichier);
+
+    printf("\n-------------------------------------------------\n");
+    printf("Le contenu du fichier '%s' est:", nom_de_fichier);
+    printf("\n-------------------------------------------------\n\n");
 
     while ((ch = fgetc(mon_fichier)) != EOF)
         printf("%c", ch);
@@ -33,7 +36,7 @@ void ecrire_dans_fichier(char *nom_de_fichier, char *message)
     FILE *mon_fichier = fopen(nom_de_fichier, "w");
     if (!mon_fichier)
     {
-        printf("oops, %s n'existe pas\n", nom_de_fichier);
+        printf("oops, le fichier '%s' n'existe pas\n", nom_de_fichier);
         exit(-1);
     }
 

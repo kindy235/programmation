@@ -1,6 +1,4 @@
-
-Exercice
-Fichier : fichier.h Auteurs : Aboubacar BAH,
-Auteurs:   Guth MOELLE
+Fichier : fichier.h
+Auteurs:   Aboubacar BAH, Guth MOELLE
 Objectif : Prototypes des fonctions sur les fichier
-les prototypes des fonctions sur les operateursPour eviter les inclusions infinies,
+les prototypes des fonctions sur les operateursPour eviter les inclusions infinies.
