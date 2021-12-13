@@ -1,9 +1,9 @@
 /*
-Exercice 4.3 [★]
+Exercice 4.3 [★★]
 
 Fichier : etudiant_bd.c
 Auteurs : Aboubacar BAH, Guth MOELLE
-Objectif : Implementer les fonctions sur les fichiers
+Objectif : Enregister les données des etudiants dans un tableau
 
 Compiliation: gcc -o .\etudiant_bd .\etudiant_bd.c .\fichier.c
 */
