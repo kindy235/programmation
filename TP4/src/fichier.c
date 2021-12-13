@@ -33,7 +33,8 @@ void lire_fichier(char *nom_de_fichier)
 void ecrire_dans_fichier(char *nom_de_fichier, char *message)
 {
     // char ch;
-    FILE *mon_fichier = fopen(nom_de_fichier, "w");
+    // FILE *mon_fichier = fopen(nom_de_fichier, "w");
+    FILE *mon_fichier = fopen(nom_de_fichier, "a");
     if (!mon_fichier)
     {
         printf("oops, le fichier '%s' n'existe pas\n", nom_de_fichier);
