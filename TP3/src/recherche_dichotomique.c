@@ -10,7 +10,7 @@ Objectif : Rechercher par dichotomie un entier dans un tableau de 100 entier
 #include <stdlib.h>
 #include <time.h>
 
-// Affiche les elements d'un tableau d'entiers
+// Fonction pour afficher les elements d'un tableau d'entiers
 void printint_array(int array[], int array_size)
 {
     for (int k = 0; k < array_size; k++)
@@ -39,7 +39,7 @@ void tri(int array[], int array_size)
 
 int main()
 {
-    // Generateur de nombres pseudo-aleatoires
+    // Initialisation du Generateur de nombres pseudo-aleatoires
     srand(time(NULL));
 
     printf("\n---------------------------------------");
@@ -47,12 +47,12 @@ int main()
     printf("\n---------------------------------------");
 
     // Declaration du tableau type int et l'entier à rechercher
-    // Les variables debut et fin contient les debuts et fin des indices du tableaux, elles sont utililes
-    // pour la recherche dichotomique. La variale mil contient contier l'indice entre le debut et la fin
+    // Les variables debut et fin contient les debuts et fin des indices du tableaux, elles sont utililées
+    // pour la recherche dichotomique. La variale mil contient contient l'indice entre le debut et la fin
     int tableau[100];
     int entier = 0, find = 0, debut = 0, fin = 100, mil = 0;
 
-    // Boucle pour remplir le tableau de 100 entiers
+    // Boucle pour remplir aleatoirement le tableau de 100 entiers
     for (int i = 0; i < 100; i++)
         *(tableau + i) = rand() % 1000;
 

@@ -3,7 +3,7 @@ Exercice 3.7 [★★★]
 
 Fichier : couleur_compteur.c
 Auteurs : Aboubacar BAH, Guth MOELLE
-Objectif : Compteur les differentes couleurs distinctes et les afficher
+Objectif : Compteur les differentes couleurs distinctes et les affiche
 */
 
 #include <stdio.h>
@@ -53,8 +53,9 @@ int main()
     // On affiche les 100 couleurs à l'aide de la fonction "colors_print"
     colors_print(couleurs, 100);
 
-    // Compoteur[],tableau pour compteur le nombres d'apparition d'une couluers
+    // Compoteur[],tableau pour compteur le nombres d'apparition d'une couleur
     int compteur[100] = {0};
+
     // Tableau pour Verifier si une couleur a été dèjà compté ou pas
     int doublon[100] = {0};
 

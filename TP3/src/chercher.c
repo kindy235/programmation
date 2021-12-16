@@ -29,7 +29,6 @@ int main()
     printf("\n---------------------------------------");
 
     // Declaration du tableau de type int et l'entier à rechercher
-
     int tableau[100];
     int entier = 0, find = 0;
 
@@ -53,7 +52,7 @@ int main()
         }
     }
 
-    // printf("%d entier trouve\n", find);
+    // S'il la trouve pas, affiche le message 'Aucun entier trouve' sinon affiche 'Entier présent !!'
     if (find == 0)
     {
         printf("\nAucun entier trouve");

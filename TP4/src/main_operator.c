@@ -3,10 +3,13 @@ Exercice 4.1 [★]
 
 Fichier : operators.c
 Auteurs : Aboubacar BAH, Guth MOELLE
-Objectif : Effectue des calcul via les fichiers "operator.c" et "operator.h"
+Objectif : Effectue des operations de calculs via les fichiers "operator.c" et "operator.h"
+
+Compilation gcc -o operator operator.c main_operator.c
 */
 
 #include <stdio.h>
+// Fichier en-tete contenant les prototypes des focntions (somme, produit, modulo...)
 #include "operator.h"
 
 int main()
@@ -19,14 +22,13 @@ int main()
 
     int num1 = 0, num2 = 0;
     unsigned char num = 0;
-    // On crée un tableau de chaine de caractères op[] de taille 2.
-    // La première position est ocuppé par la valeur de l'operateur et la deuxième
-    // par le caractère de fin de chaine (0)
     char op[2];
 
     printf("Operateur : ");
     scanf("%s", &op[0]);
 
+    // On verifie si l'operateur est ~, si c'est le cas,
+    // on demande à l'utilisateur d'entrer unne seule valeur; dans le cas contraire; on saisit deux valeurs
     if (op[0] == '~')
     {
         printf("num : ");
@@ -41,7 +43,7 @@ int main()
         scanf("%d", &num2);
     }
 
-    // Ensuite on utilise switch pour effectuer differentes conditions sur l'operatuer saisi au clavier
+    // Ensuite on utilise switch pour effectuer differentes conditions sur l'operateur saisi au clavier
     // afin d'effectuer le calcul.
     switch (op[0])
     {
