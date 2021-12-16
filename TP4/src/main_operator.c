@@ -1,9 +1,9 @@
 /*
 Exercice 4.1 [★]
 
-Fichier : operators.c
+Fichier : main_operator.c
 Auteurs : Aboubacar BAH, Guth MOELLE
-Objectif : Effectue des operations de calculs via les fichiers "operator.c" et "operator.h"
+Objectif : Effectue des operations de calculs (somme, produit, modulo...) via les fichiers "operator.c" et "operator.h"
 
 Compilation gcc -o operator operator.c main_operator.c
 */
@@ -19,7 +19,7 @@ int main()
     printf("\nCalcul avec plusieurs operateurs\n");
     printf("\nOperateurs possibles : [+, -, *, /, %%, &, |, ~]\n");
     printf("\n--------------------------------------\n");
-
+    // Initiliasion des variables
     int num1 = 0, num2 = 0;
     unsigned char num = 0;
     char op[2];
@@ -44,7 +44,7 @@ int main()
     }
 
     // Ensuite on utilise switch pour effectuer differentes conditions sur l'operateur saisi au clavier
-    // afin d'effectuer le calcul.
+    // afin d'effectuer le calcul adéquat
     switch (op[0])
     {
     case '+':

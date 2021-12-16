@@ -1,16 +1,20 @@
 /*
-Exercice 3.7 [★★★]
+Exercice 3.5 [★★★]
 
 Fichier : recherche_dichotomique.c
 Auteurs : Aboubacar BAH, Guth MOELLE
-Objectif : Rechercher par dichotomie un entier dans un tableau de 100 entier
+Objectif : Rechercher par dichotomie un entier dans un tableau de 100 entiers
 */
 
+// Inclure les bibliothèques suivants 'stdlib'; 'stdio' et 'time'
 #include <stdio.h>
+// stdlib contient la fonction 'rand()'
 #include <stdlib.h>
+// La bibliothèque 'time' est utilisée pour fournir les valeurs à rand
 #include <time.h>
 
-// Fonction pour afficher les elements d'un tableau d'entiers
+// Fonction pour affiche les elements d'un tableau d'entiers
+// Elle reçoit en entrées un tableau d'eniters et la taille de ce tableau
 void printint_array(int array[], int array_size)
 {
     for (int k = 0; k < array_size; k++)
@@ -19,14 +23,19 @@ void printint_array(int array[], int array_size)
     }
 }
 
-// Fonction pour trier par ordre alphanumerique un tableau d'entiers
+// Fonction pour trier par ordre croissant un tableau d'entiers
+// Elle reçoit en entrées un tableau d'eniters et la taille de ce tableau
 void tri(int array[], int array_size)
 {
     int i, j, temp;
+    // Parcourir le tableau d'entiers
     for (i = 0; i < array_size - 1; i++)
     {
+        // Parcourir à partir de l'indice suivant l'indice 'i' jusqu'à la fin d'indice du tableau
         for (j = i + 1; j < array_size; j++)
         {
+            // Si la valeur de la tab d'indice 'i' est > a la valeur de la tab d'indice 'j',
+            // on rentre dans la condition et tmp (variable temporaire) prend la valeur de la tab d'indice 'i', la tab d'indice 'i' prend la valeur de la tab d'indice 'j' et la tab d'indice 'j' prend la valeur de tmp.
             if (array[i] > array[j])
             {
                 temp = array[i];
@@ -37,6 +46,7 @@ void tri(int array[], int array_size)
     }
 }
 
+// Programme principal
 int main()
 {
     // Initialisation du Generateur de nombres pseudo-aleatoires
@@ -72,7 +82,9 @@ int main()
     // Recherche de l'entier par dichotomie
     while (find == 0 && debut <= fin)
     {
+        // On cherche le milieu du tableau
         mil = (debut + fin) / 2;
+        // Si la velur du milieu du tableau
         if (tableau[mil] == entier)
         {
             find = 1;
@@ -100,7 +112,9 @@ int main()
         printf("\nEntier présent\n");
     }
 
+    // On met 2 saut de lignes
     printf("\n\n");
 
+    // Le programme renvoie 0 si tout s'est bien passé.
     return 0;
 }

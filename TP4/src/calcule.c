@@ -1,5 +1,5 @@
 /*
-Exercice 4.3 [★★]
+Exercice 4.4 [★★]
 
 Fichier : calcule.c
 Auteurs : Aboubacar BAH, Guth MOELLE
@@ -8,10 +8,13 @@ Objectif : Calculer à l'aide des opérateurs du fichier operator.c et des argum
 Compiliation: gcc -o .\calcule .\calcule.c .\operator.c
 */
 
+// Il faut inclure les bibliothéques suivantes:
 #include <stdio.h>
 #include <stdlib.h>
+// Il faut inclure le fichier 'operator.h' pour avoir les fonctions '(somme, produit, ...)
 #include "operator.h"
 
+// Programme principal, cette fois-ci, on ajoute en entrées du 'main' les variable argc (qui contient le nombre d'argument)
 int main(int argc, char **argv)
 {
     printf("\n--------------------------------------");
@@ -22,9 +25,14 @@ int main(int argc, char **argv)
     char op = *argv[1];
     int num1 = atoi(argv[2]);
     int num2 = atoi(argv[3]);
-    // On crée un tableau de chaine de caractères op[] de taille 2.
-    // La première position est ocuppé par la valeur de l'operateur et la deuxième
-    // par le caractère de fin de chaine (0)
+
+    // On verifie si tous les arguments sont fournies, sinon on arrete le programme.
+    if (argc != 4)
+    {
+        printf("Arguments manquants\n\n");
+        printf("Utilisation: %s [Operateur] [nombre1] et/ou [nombre 2]\n\n", argv[0]);
+        exit(-1);
+    }
 
     // Ensuite on utilise switch pour effectuer differentes conditions sur l'operatuer saisi au clavier
     // afin d'effectuer le calcul.
@@ -67,5 +75,6 @@ int main(int argc, char **argv)
         break;
     }
 
+    // On return 0 s'il n'ya aucun erreur.
     return 0;
 }
